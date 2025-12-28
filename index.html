@@ -3,28 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Area Calculator App</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="weatherlogo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="calculator-container">
-        <h1>Area Calculator</h1>
-        <select id="shapeSelector">
-            <option value=""disabled selected>Select a Shape</option>
-            <option value="rectangle">Rectangle</option>
-            <option value="circle">Circle</option>
-            <option value="triangle">Triangle</option>
-            <option value="square">Square</option>
-            <option value="paralellogram">Paralellogram</option>
-            <option value="ellipse">Ellipse</option>
-        </select>
-        <div id="inputFields">
-
+    <div class="container">
+        <h1><i class="fas fa-cloud-sun"></i>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
         </div>
-        <button id="calculateBtn">Calculate Area</button>
-        <p id="result">Area: 00.00</p>
+        <div class="weather-card" id="weatherCard">
+            <p class="message">Enter a city name and click search.</p>
+        </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2c2c3a511e.js" crossorigin="anonymous"></script>
 </body>
 </html>
